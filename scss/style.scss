@@ -1,0 +1,23 @@
+// import 순서 :
+
+// 1. 추상적인 파일
+//     1-1 변수
+//     1-2 함수
+//     1-3 믹스인
+// 2. 컴파일된 파일 (순서는 상관 없음)
+//     2-1 reset
+//     2-2 typography
+//     - 컴포넌트 정의
+//     - 페이지 정의
+//     - 레이아웃정의 등등
+
+// 언더바 파일명은 컴파일 되지 않고, import 시켜야 한다.
+// ex) _function.scss
+// sass는 확장자 필요 없음
+// under score 필요 없음 (/)
+@import "variable";
+@import "function";
+@import "mixin";
+@import "reset";
+@import "space";
+@import "content1";

@@ -1,0 +1,8 @@
+// 리스형 변수는 2개 이상만 가능
+$mt: 20, 30;
+
+@each $item in $mt {
+  .mt#{$item} {
+    margin-top: rem($item);
+  }
+}
