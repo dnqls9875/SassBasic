@@ -1,0 +1,27 @@
+.table-type2 {
+  tr {
+    td {
+      &:first-child {
+        text-align: left;
+      }
+    }
+  }
+  th {
+    @include font(#333, null, 700, 24px, null);
+    // @include padding(24px, 16px, 24px, 16px);
+    padding: 24px 16px;
+    border-top: 2px solid #005bac;
+    border-bottom: 1px solid #005bac;
+
+    &:first-child {
+      text-align: left;
+    }
+  }
+  td {
+    @include font(#777, null, null, 24px, null);
+    // @include padding(24px, 20px, 24px, 20px);
+    padding: 24px 20px;
+    text-align: center;
+    border-bottom: 1px solid #e1e1e1;
+  }
+}

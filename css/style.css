@@ -201,4 +201,26 @@ input[type=date]:valid::before {
   padding-inline: 1.2rem;
 }
 
+.table-type2 tr td:first-child {
+  text-align: left;
+}
+.table-type2 th {
+  color: #333;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 24px 16px;
+  border-top: 2px solid #005bac;
+  border-bottom: 1px solid #005bac;
+}
+.table-type2 th:first-child {
+  text-align: left;
+}
+.table-type2 td {
+  color: #777;
+  line-height: 24px;
+  padding: 24px 20px;
+  text-align: center;
+  border-bottom: 1px solid #e1e1e1;
+}
+
 /*# sourceMappingURL=style.css.map */
