@@ -1,0 +1,20 @@
+.table-type3 {
+  th {
+    @include font(#333, null, 700, 24px, null);
+    padding: 24px 16px;
+    border-top: 2px solid #005bac;
+    border-bottom: 1px solid #005bac;
+    text-align: center;
+  }
+
+  td {
+    @include font(#777, null, null, 24px, null);
+    padding: 24px 20px;
+    border-bottom: 1px solid #e1e1e1;
+    text-align: center;
+
+    &:nth-of-type(2) {
+      text-align: left;
+    }
+  }
+}

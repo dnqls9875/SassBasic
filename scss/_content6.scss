@@ -1,0 +1,30 @@
+.history {
+  padding: 20px;
+
+  &-list {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+
+    gap: 0 120px;
+    &__item {
+      &:nth-of-type(1) {
+        grid-row: 1 / 4;
+      }
+      &:nth-of-type(2) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 107px 212px;
+        border: 1px solid #e1e1e1;
+      }
+      &:nth-of-type(3) {
+        @include font(#333, 40px, 900, 1, -0.5px);
+        padding-top: 80px;
+      }
+      &:nth-of-type(4) {
+        @include font(#333, 24px, 400, null, null);
+        padding-top: 20px;
+      }
+    }
+  }
+}

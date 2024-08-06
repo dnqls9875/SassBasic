@@ -1,0 +1,26 @@
+.footer {
+  // footer__top
+  &__top {
+  }
+  // footer-nav
+  &-nav {
+    li {
+    }
+  }
+  // footer__bottom
+  &__bottom {
+    .company-list {
+      li {
+        strong {
+        }
+        span {
+        }
+      }
+    }
+  }
+  &__copyright {
+  }
+
+  .--before {
+  }
+}

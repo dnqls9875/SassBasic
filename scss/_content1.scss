@@ -19,7 +19,7 @@ $gray33: #333;
 }
 
 .btn-type1 {
-  @include font(#333, rem(14), 700, rem(20), rem(-0.5));
+  @include font($gray33, rem(14), 700, rem(20), rem(-0.5));
   @include background("ico_btn1.svg", right rem(12) center);
   display: flex;
   align-items: center;

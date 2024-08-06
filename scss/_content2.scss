@@ -23,5 +23,13 @@
     padding: 24px 20px;
     text-align: center;
     border-bottom: 1px solid #e1e1e1;
+
+    a {
+      @include background("ico_mail2.svg", center);
+      display: block;
+      width: 24px;
+      height: 24px;
+      margin: 0 auto;
+    }
   }
 }

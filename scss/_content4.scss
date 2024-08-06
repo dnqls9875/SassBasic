@@ -1,0 +1,40 @@
+.table-type4 {
+  th {
+    @include font(#333, null, 700, 24px, null);
+    padding: 24px 16px;
+    border-top: 2px solid #005bac;
+    border-bottom: 1px solid #005bac;
+    text-align: center;
+  }
+  td {
+    @include font(#777, null, null, 24px, null);
+    padding: 24px 355px;
+    border-right: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    text-align: left;
+  }
+
+  td ~ td {
+    padding: 24px 20px;
+    text-align: center;
+  }
+
+  span {
+    position: relative;
+    display: inline-block;
+    padding-left: 7px;
+    text-indent: 10px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 3px;
+      height: 3px;
+      border-radius: 1000px;
+      background: #777;
+    }
+  }
+}
