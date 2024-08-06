@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Reset */
 html,
 body,
@@ -266,6 +267,7 @@ input[type=date]:valid::before {
   border-right: 1px solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
   text-align: left;
+  white-space: nowrap;
 }
 .table-type4 td ~ td {
   padding: 24px 20px;
@@ -367,6 +369,64 @@ input[type=date]:valid::before {
   font-size: 24px;
   font-weight: 400;
   padding-top: 20px;
+}
+
+:root {
+  --eng: "Roboto", sans-serif;
+}
+
+.footer {
+  position: relative;
+}
+.footer-nav {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.footer-nav li {
+  color: #777;
+  line-height: 12px;
+  letter-spacing: -0.5px;
+  margin-right: 12px;
+}
+.footer-nav li:nth-of-type(2) {
+  margin-right: 4px;
+}
+.footer-nav li:nth-of-type(3) {
+  margin-right: 0;
+  margin-left: 4px;
+}
+.footer__bottom .company-list li strong {
+  color: #333;
+  line-height: 12px;
+  letter-spacing: -0.5px;
+}
+.footer__bottom .company-list li span {
+  color: #777;
+  line-height: 12px;
+  font-family: var(--eng);
+}
+.footer__copyright {
+  color: #bebebe;
+  line-height: 12px;
+  font-family: var(--eng);
+}
+.footer .--before {
+  position: relative;
+}
+.footer .--before::before {
+  color: #777;
+  font-size: 12px;
+  line-height: 12px;
+  content: "‧";
+  display: inline-block; /* inline-block으로 변경 */
+  position: absolute;
+  top: 50%;
+  left: -4px;
+  transform: translateY(-50%);
+  width: 3px;
+  font-family: var(--eng);
+  margin-right: 4px; /* 오른쪽 간격 설정 */
 }
 
 /*# sourceMappingURL=style.css.map */
