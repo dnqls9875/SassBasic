@@ -468,4 +468,114 @@ input[type=date]:valid::before {
   font-family: var(--eng);
 }
 
+.list-type1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.list-type1 li {
+  border: 1px solid #000;
+}
+.list-type1__link {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 30px 79px 30px 30px;
+}
+.list-type1__link strong {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.list-type1__link span {
+  color: #999;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.7px;
+  margin-top: 16px;
+  white-space: nowrap;
+}
+.list-type1__btn {
+  background: url(../images/ico_btn_plus.svg) no-repeat left;
+  display: block;
+  width: 36px;
+  height: 36px;
+  margin-top: 20px;
+}
+
+.list-type2 {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #fac300;
+  padding: 28px 0 28px 348px;
+}
+.list-type2 li {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+.list-type2 li a {
+  color: #666;
+  letter-spacing: -0.8px;
+  display: block;
+}
+.list-type2 li span {
+  background: url(../images/ico_arrow_right.svg) no-repeat center;
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+.list-type2 li:nth-of-type(4) a {
+  color: #333;
+  text-decoration-line: underline;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.list-heading3 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.list-type3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 24px;
+  margin-top: 20px;
+}
+.list-type3 li {
+  border: 1px solid #fac300;
+}
+.list-type3__link {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 30px;
+}
+.list-type3__link strong {
+  color: #fac300;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.9px;
+  text-align: center;
+}
+.list-type3__link span {
+  color: #666;
+  line-height: 1.8;
+  letter-spacing: -0.8px;
+}
+
 /*# sourceMappingURL=style.css.map */

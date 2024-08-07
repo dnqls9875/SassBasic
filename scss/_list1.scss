@@ -1,0 +1,29 @@
+.list-type1 {
+  @include grid(grid, repeat(4, 1fr), null, null, 24px);
+
+  li {
+    // 육안상으로 확인 할 수 있게한 style
+    border: 1px solid #000;
+  }
+  &__link {
+    @include flex(flex, column wrap, null, null, null);
+    padding: 30px 79px 30px 30px;
+
+    strong {
+      @include font(#000, 20px, 700, 1, -1px);
+    }
+    span {
+      @include font(#999, 14px, 500, null, -0.7px);
+      margin-top: 16px;
+      white-space: nowrap;
+    }
+  }
+
+  &__btn {
+    @include background("ico_btn_plus.svg", left);
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin-top: 20px;
+  }
+}
