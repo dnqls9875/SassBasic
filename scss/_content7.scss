@@ -3,35 +3,43 @@
 }
 
 .footer {
-  position: relative;
+  @include flex(flex, column wrap, center, center, rem(20));
+  padding: rem(42) rem(20);
+  border-top: 2px solid #175caa;
+
+  .icon-list {
+    @include flex(flex, row nowrap, center, start, rem(12));
+  }
+
   // footer__top
   &__top {
+    @include flex(flex, column wrap, center, center, rem(20));
   }
   // footer-nav
   &-nav {
-    display: flex;
-    position: relative;
-    align-items: center;
+    @include grid(grid, 1fr, null, center, rem(4));
 
     li {
-      @include font(#777, null, null, 12px, -0.5px);
-      margin-right: 12px;
+      @include font(#777, rem(14), null, rem(24), rem(-0.5));
 
       &:nth-of-type(2) {
-        margin-right: 4px;
-      }
-      &:nth-of-type(3) {
-        margin-right: 0;
-        margin-left: 4px;
+        @include flex(flex, row nowrap, center, center, rem(4));
       }
     }
   }
   // footer__bottom
   &__bottom {
+    @include flex(flex, column wrap, center, center, rem(20));
     .company-list {
+      @include grid(grid, repeat(2, 1fr), null, center, null);
+
       li {
+        @include flex(flex, column wrap, center, center, rem(4));
+        padding: rem(14) rem(36) rem(14) rem(37);
+        border: 1px solid #f1f1f1;
+
         strong {
-          @include font(#333, null, null, 12px, -0.5px);
+          @include font(#333, rem(14), 700, rem(14), rem(-0.5));
         }
         span {
           @include font(#777, null, null, 12px, null);
@@ -41,34 +49,18 @@
     }
   }
   &__copyright {
-    @include font(#bebebe, null, null, 12px, null);
+    @include font(#bebebe, rem(11), null, rem(12), null);
     font-family: var(--eng);
   }
 
   .--before {
     position: relative;
-    // &::before {
-    //   @include font(#777, 12px, null, 12px, null);
-    //   content: "‧";
-    //   display: inline-block;
-    //   position: absolute;
-    //   top: 50%;
-    //   transform: translateY(-50%);
-    //   width: 3px;
-    //   font-family: var(--eng);
-    // }
-
     &::before {
-      @include font(#777, 12px, null, 12px, null);
+      @include font(#777, rem(12), null, rem(12), null);
       content: "‧";
       display: inline-block; /* inline-block으로 변경 */
-      position: absolute;
-      top: 50%;
-      left: -4px;
-      transform: translateY(-50%);
-      width: 3px;
+      width: rem(3);
       font-family: var(--eng);
-      margin-right: 4px; /* 오른쪽 간격 설정 */
     }
   }
 }

@@ -344,6 +344,7 @@ input[type=date]:valid::before {
 .history-list {
   display: grid;
   grid-template-columns: min-content 1fr;
+  align-items: start;
   gap: 0 120px;
 }
 .history-list__item:nth-of-type(1) {
@@ -351,6 +352,7 @@ input[type=date]:valid::before {
 }
 .history-list__item:nth-of-type(2) {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   padding: 107px 212px;
@@ -376,30 +378,74 @@ input[type=date]:valid::before {
 }
 
 .footer {
-  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 4.2rem 2rem;
+  border-top: 2px solid #175caa;
+}
+.footer .icon-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: start;
+  gap: 1.2rem;
+}
+.footer__top {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 .footer-nav {
-  display: flex;
-  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
+  gap: 0.4rem;
 }
 .footer-nav li {
   color: #777;
-  line-height: 12px;
-  letter-spacing: -0.5px;
-  margin-right: 12px;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  letter-spacing: -0.05rem;
 }
 .footer-nav li:nth-of-type(2) {
-  margin-right: 4px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
 }
-.footer-nav li:nth-of-type(3) {
-  margin-right: 0;
-  margin-left: 4px;
+.footer__bottom {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.footer__bottom .company-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.footer__bottom .company-list li {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 1.4rem 3.6rem 1.4rem 3.7rem;
+  border: 1px solid #f1f1f1;
 }
 .footer__bottom .company-list li strong {
   color: #333;
-  line-height: 12px;
-  letter-spacing: -0.5px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.4rem;
+  letter-spacing: -0.05rem;
 }
 .footer__bottom .company-list li span {
   color: #777;
@@ -408,7 +454,8 @@ input[type=date]:valid::before {
 }
 .footer__copyright {
   color: #bebebe;
-  line-height: 12px;
+  font-size: 1.1rem;
+  line-height: 1.2rem;
   font-family: var(--eng);
 }
 .footer .--before {
@@ -416,17 +463,12 @@ input[type=date]:valid::before {
 }
 .footer .--before::before {
   color: #777;
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
   content: "‧";
   display: inline-block; /* inline-block으로 변경 */
-  position: absolute;
-  top: 50%;
-  left: -4px;
-  transform: translateY(-50%);
-  width: 3px;
+  width: 0.3rem;
   font-family: var(--eng);
-  margin-right: 4px; /* 오른쪽 간격 설정 */
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -74,3 +74,19 @@
   margin-bottom: $bottom;
   margin-left: $left;
 }
+
+@mixin flex($flex, $flow, $justify, $align, $gap) {
+  display: $flex;
+  flex-flow: $flow;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin grid($grid, $columns, $rows, $align, $gap) {
+  display: $grid;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+  align-items: $align;
+  gap: $gap;
+}
