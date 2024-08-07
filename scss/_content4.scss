@@ -1,16 +1,16 @@
 .table-type4 {
   th {
     @include font(#333, null, 700, 24px, null);
+    @include border(2px, solid, #005bac, top);
+    @include border(1px, solid, #005bac, bottom);
     padding: 24px 16px;
-    border-top: 2px solid #005bac;
-    border-bottom: 1px solid #005bac;
     text-align: center;
   }
   td {
     @include font(#777, null, null, 24px, null);
+    @include border(1px, solid, #e1e1e1, right);
+    @include border(1px, solid, #e1e1e1, bottom);
     padding: 24px 355px;
-    border-right: 1px solid #e1e1e1;
-    border-bottom: 1px solid #e1e1e1;
     text-align: left;
     white-space: nowrap;
   }

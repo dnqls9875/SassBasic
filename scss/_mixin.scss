@@ -32,6 +32,21 @@
   }
 }
 
+// border
+@mixin border($width, $style, $color, $direction: all) {
+  @if $direction == all {
+    border: $width $style $color;
+  } @else if $direction == top {
+    border-top: $width $style $color;
+  } @else if $direction == right {
+    border-right: $width $style $color;
+  } @else if $direction == bottom {
+    border-bottom: $width $style $color;
+  } @else if $direction == left {
+    border-left: $width $style $color;
+  }
+}
+
 // a11y-hidden
 @mixin a11y-hidden {
   overflow: hidden;
@@ -55,26 +70,6 @@
   letter-spacing: $letterSpacing;
 }
 
-@mixin border($borderWidth, $borderStyle, $borderColor) {
-  border-width: $borderWidth;
-  border-style: $borderStyle;
-  border-color: $borderColor;
-}
-
-@mixin padding($top, $right, $bottom, $left) {
-  padding-top: $top;
-  padding-right: $right;
-  padding-bottom: $bottom;
-  padding-left: $left;
-}
-
-@mixin margin($top, $right, $bottom, $left) {
-  margin-top: $top;
-  margin-right: $right;
-  margin-bottom: $bottom;
-  margin-left: $left;
-}
-
 @mixin flex($flex, $flow, $justify, $align, $gap) {
   display: $flex;
   flex-flow: $flow;
@@ -90,3 +85,18 @@
   align-items: $align;
   gap: $gap;
 }
+
+// ! 별로 사용하지 않을 것 같음 효율이 적음
+// @mixin padding($top, $right, $bottom, $left) {
+//   padding-top: $top;
+//   padding-right: $right;
+//   padding-bottom: $bottom;
+//   padding-left: $left;
+// }
+
+// @mixin margin($top, $right, $bottom, $left) {
+//   margin-top: $top;
+//   margin-right: $right;
+//   margin-bottom: $bottom;
+//   margin-left: $left;
+// }

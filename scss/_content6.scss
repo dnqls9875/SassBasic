@@ -10,8 +10,8 @@
       }
       &:nth-of-type(2) {
         @include flex(flex, row wrap, center, center, null);
+        @include border(1px, solid, #e1e1e1);
         padding: 107px 212px;
-        border: 1px solid #e1e1e1;
       }
       &:nth-of-type(3) {
         @include font(#333, 40px, 900, 1, -0.5px);

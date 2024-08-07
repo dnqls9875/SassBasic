@@ -4,8 +4,8 @@
 
 .footer {
   @include flex(flex, column wrap, center, center, rem(20));
+  @include border(rem(2), solid, #175caa, top);
   padding: rem(42) rem(20);
-  border-top: 2px solid #175caa;
 
   .icon-list {
     @include flex(flex, row nowrap, center, start, rem(12));
@@ -35,8 +35,8 @@
 
       li {
         @include flex(flex, column wrap, center, center, rem(4));
-        padding: rem(14) rem(36) rem(14) rem(37);
-        border: 1px solid #f1f1f1;
+        @include border(rem(1), solid, #f1f1f1);
+        padding: rem(14) rem(37);
 
         strong {
           @include font(#333, rem(14), 700, rem(14), rem(-0.5));
@@ -54,7 +54,6 @@
   }
 
   .--before {
-    position: relative;
     &::before {
       @include font(#777, rem(12), null, rem(12), null);
       content: "‧";

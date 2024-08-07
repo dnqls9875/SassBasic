@@ -209,9 +209,9 @@ input[type=date]:valid::before {
   color: #333;
   font-weight: 700;
   line-height: 24px;
-  padding: 24px 16px;
   border-top: 2px solid #005bac;
   border-bottom: 1px solid #005bac;
+  padding: 24px 16px;
 }
 .table-type2 th:first-child {
   text-align: left;
@@ -219,9 +219,9 @@ input[type=date]:valid::before {
 .table-type2 td {
   color: #777;
   line-height: 24px;
+  border-bottom: 1px solid #e1e1e1;
   padding: 24px 20px;
   text-align: center;
-  border-bottom: 1px solid #e1e1e1;
 }
 .table-type2 td a {
   background: url(../images/ico_mail2.svg) no-repeat center;
@@ -235,16 +235,16 @@ input[type=date]:valid::before {
   color: #333;
   font-weight: 700;
   line-height: 24px;
-  padding: 24px 16px;
   border-top: 2px solid #005bac;
   border-bottom: 1px solid #005bac;
+  padding: 24px 16px;
   text-align: center;
 }
 .table-type3 td {
   color: #777;
   line-height: 24px;
-  padding: 24px 20px;
   border-bottom: 1px solid #e1e1e1;
+  padding: 24px 20px;
   text-align: center;
 }
 .table-type3 td:nth-of-type(2) {
@@ -255,17 +255,17 @@ input[type=date]:valid::before {
   color: #333;
   font-weight: 700;
   line-height: 24px;
-  padding: 24px 16px;
   border-top: 2px solid #005bac;
   border-bottom: 1px solid #005bac;
+  padding: 24px 16px;
   text-align: center;
 }
 .table-type4 td {
   color: #777;
   line-height: 24px;
-  padding: 24px 355px;
   border-right: 1px solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
+  padding: 24px 355px;
   text-align: left;
   white-space: nowrap;
 }
@@ -296,11 +296,11 @@ input[type=date]:valid::before {
 }
 
 .content-type5 {
+  border: 4px solid #005bac;
   display: flex;
   flex-direction: column;
   gap: 24px;
   padding: 60px;
-  border: 4px solid #005bac;
 }
 .content-type5 .heading-type5 h3 {
   color: #333;
@@ -330,10 +330,10 @@ input[type=date]:valid::before {
   font-weight: 700;
   line-height: 1;
   letter-spacing: -1px;
+  border: 1px solid #94c0e9;
   display: block;
   padding: 16px 32px;
   border-radius: 50px;
-  border: 1px solid #94c0e9;
   text-align: center;
   white-space: nowrap;
 }
@@ -355,8 +355,8 @@ input[type=date]:valid::before {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  padding: 107px 212px;
   border: 1px solid #e1e1e1;
+  padding: 107px 212px;
 }
 .history-list__item:nth-of-type(3) {
   color: #333;
@@ -383,8 +383,8 @@ input[type=date]:valid::before {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  border-top: 0.2rem solid #175caa;
   padding: 4.2rem 2rem;
-  border-top: 2px solid #175caa;
 }
 .footer .icon-list {
   display: flex;
@@ -437,8 +437,8 @@ input[type=date]:valid::before {
   justify-content: center;
   align-items: center;
   gap: 0.4rem;
-  padding: 1.4rem 3.6rem 1.4rem 3.7rem;
-  border: 1px solid #f1f1f1;
+  border: 0.1rem solid #f1f1f1;
+  padding: 1.4rem 3.7rem;
 }
 .footer__bottom .company-list li strong {
   color: #333;
@@ -457,9 +457,6 @@ input[type=date]:valid::before {
   font-size: 1.1rem;
   line-height: 1.2rem;
   font-family: var(--eng);
-}
-.footer .--before {
-  position: relative;
 }
 .footer .--before::before {
   color: #777;

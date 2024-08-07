@@ -2,11 +2,11 @@
   --eng: "Roboto", sans-serif;
 }
 .content-type5 {
+  @include border(4px, solid, #005bac);
   display: flex;
   flex-direction: column;
   gap: 24px;
   padding: 60px;
-  border: 4px solid #005bac;
 
   .heading-type5 {
     h3 {
@@ -29,10 +29,10 @@
 
     &__download {
       @include font(#94c0e9, null, 700, 1, -1px);
+      @include border(1px, solid, #94c0e9);
       display: block;
       padding: 16px 32px;
       border-radius: 50px;
-      border: 1px solid #94c0e9;
       text-align: center;
       white-space: nowrap;
     }

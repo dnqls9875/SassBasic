@@ -8,10 +8,9 @@
   }
   th {
     @include font(#333, null, 700, 24px, null);
-    // @include padding(24px, 16px, 24px, 16px);
+    @include border(2px, solid, #005bac, top);
+    @include border(1px, solid, #005bac, bottom);
     padding: 24px 16px;
-    border-top: 2px solid #005bac;
-    border-bottom: 1px solid #005bac;
 
     &:first-child {
       text-align: left;
@@ -19,10 +18,9 @@
   }
   td {
     @include font(#777, null, null, 24px, null);
-    // @include padding(24px, 20px, 24px, 20px);
+    @include border(1px, solid, #e1e1e1, bottom);
     padding: 24px 20px;
     text-align: center;
-    border-bottom: 1px solid #e1e1e1;
 
     a {
       @include background("ico_mail2.svg", center);
