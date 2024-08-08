@@ -13,7 +13,7 @@
     width: 100%;
     height: 246px;
 
-    @for $i from 1 to 9 {
+    @for $i from 1 through 8 {
       &.img#{$i} {
         @include background("img_list9_0#{$i}.png", left top);
       }
