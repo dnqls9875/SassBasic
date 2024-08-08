@@ -1,0 +1,62 @@
+.list-type9 {
+  @include grid(grid, repeat(4, 1fr), null, null, 60px 32px);
+  padding: 30px;
+}
+
+.list-link {
+  @include flex(flex, column wrap, null, null, null);
+  white-space: nowrap;
+
+  &__img {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 246px;
+
+    @for $i from 1 to 9 {
+      &.img#{$i} {
+        @include background("img_list9_0#{$i}.png", left top);
+      }
+    }
+  }
+
+  &__title {
+    @include font(#333, 24px, 700, 1, -0.5px);
+    padding-top: 36px;
+  }
+  &__content {
+    @include font(#999, null, null, null, null);
+    padding-top: 20px;
+  }
+  .list-view {
+    @include flex(flex, row nowrap, null, null, 10px);
+    @include font(#999, 12px, null, null, null);
+    padding-top: 16px;
+
+    strong {
+      color: #333;
+      font-weight: 700;
+    }
+  }
+}
+
+.a11y-hidden {
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.new {
+  @include font(#fff, 12px, 700, 28px, null);
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 50px;
+  background: #ffd300;
+  text-transform: uppercase;
+  text-align: center;
+}

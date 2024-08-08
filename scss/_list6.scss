@@ -1,0 +1,29 @@
+nav {
+}
+
+.list-type6 {
+  @include grid(grid, repeat(7, 1fr), null, center, 24px 20px);
+  @include border(1px, solid, #e1e1e1);
+  padding: 48px;
+  background: #fbfbfb;
+
+  li {
+    @include border(1px, solid, #bdbdbd);
+    background: #fff;
+  }
+
+  &__btn {
+    @include flex(flex, row nowrap, space-between, center, null);
+    @include font(#333, 14px, 700, 20px, -0.5px);
+    width: auto;
+    height: 64px;
+    padding: 0 20px;
+    white-space: nowrap;
+
+    span {
+      @include background("ico_arrow_right_list5.svg", center);
+      width: 8px;
+      height: 13px;
+    }
+  }
+}

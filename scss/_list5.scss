@@ -1,0 +1,18 @@
+.list-type5 {
+  @include grid(grid, repeat(5, 1fr), null, center, null);
+
+  li {
+    @include border(1px, solid, #94c0e9);
+  }
+
+  &__btn {
+    @include font(#94c0e9, 14px, 700, 20px, -0.5px);
+    display: block;
+    padding: 22px 24px;
+  }
+
+  .--active {
+    color: #fff;
+    background: #005bac;
+  }
+}
