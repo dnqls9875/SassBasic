@@ -385,6 +385,7 @@ input[type=date]:valid::before {
   gap: 2rem;
   border-top: 0.2rem solid #175caa;
   padding: 4.2rem 2rem;
+  white-space: nowrap;
 }
 .footer .icon-list {
   display: flex;
