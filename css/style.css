@@ -202,9 +202,6 @@ input[type=date]:valid::before {
   padding-inline: 1.2rem;
 }
 
-.table-type2 tr td:first-child {
-  text-align: left;
-}
 .table-type2 th {
   color: #333;
   font-weight: 700;
@@ -213,22 +210,27 @@ input[type=date]:valid::before {
   border-bottom: 1px solid #005bac;
   padding: 24px 16px;
 }
-.table-type2 th:first-child {
-  text-align: left;
-}
 .table-type2 td {
-  color: #777;
-  line-height: 24px;
   border-bottom: 1px solid #e1e1e1;
   padding: 24px 20px;
   text-align: center;
 }
-.table-type2 td a {
+
+.email-btn {
   background: url(../images/ico_mail2.svg) no-repeat center;
-  display: block;
+  display: inline-block;
   width: 24px;
   height: 24px;
-  margin: 0 auto;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.ct-type2--text {
+  color: #777;
+  line-height: 24px;
+  display: block;
 }
 
 .table-type3 th {
@@ -241,14 +243,22 @@ input[type=date]:valid::before {
   text-align: center;
 }
 .table-type3 td {
-  color: #777;
-  line-height: 24px;
   border-bottom: 1px solid #e1e1e1;
   padding: 24px 20px;
   text-align: center;
 }
-.table-type3 td:nth-of-type(2) {
+
+.notice__text {
+  color: #777;
+  line-height: 24px;
+  display: block;
   text-align: left;
+}
+
+.ct-type3--text {
+  color: #777;
+  line-height: 24px;
+  display: block;
 }
 
 .table-type4 th {
@@ -265,13 +275,12 @@ input[type=date]:valid::before {
   line-height: 24px;
   border-right: 1px solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
-  padding: 24px 355px;
-  text-align: left;
+  padding: 24px 20px;
+  text-align: center;
   white-space: nowrap;
 }
 .table-type4 td ~ td {
   padding: 24px 20px;
-  text-align: center;
 }
 .table-type4 span {
   position: relative;
@@ -279,7 +288,22 @@ input[type=date]:valid::before {
   padding-left: 7px;
   text-indent: 10px;
 }
-.table-type4 span::before {
+
+.content-type4--list {
+  display: grid;
+  grid-template-columns: min-content;
+  align-items: center;
+  justify-content: center;
+}
+.content-type4--list__item {
+  position: relative;
+}
+.content-type4--list__text {
+  text-align: left;
+  text-indent: 6px;
+  margin-left: 6px;
+}
+.content-type4--list__text::after {
   content: "";
   display: block;
   position: absolute;
@@ -302,30 +326,35 @@ input[type=date]:valid::before {
   gap: 24px;
   padding: 60px;
 }
-.content-type5 .heading-type5 h3 {
+
+.heading-title {
   color: #333;
   font-size: 48px;
   font-weight: 700;
   line-height: 64px;
   letter-spacing: -1px;
 }
-.content-type5 .heading-type5 span {
+
+.heading-subtext {
   font-weight: 300;
 }
-.content-type5 p {
+
+.heading-text {
   color: #333;
   font-size: 36px;
   font-weight: 300;
   line-height: 48px;
   font-family: var(--eng);
 }
-.content-type5 .recruitment-list {
+
+.recruitment-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, min-content);
+  align-items: center;
   gap: 12px;
-  width: 679px;
 }
-.content-type5 .recruitment-list__download {
+
+.recruitment-btn {
   color: #94c0e9;
   font-weight: 700;
   line-height: 1;
@@ -341,16 +370,18 @@ input[type=date]:valid::before {
 .history {
   padding: 20px;
 }
-.history-list {
+.history-wrap {
   display: grid;
   grid-template-columns: min-content 1fr;
   align-items: start;
   gap: 0 120px;
 }
-.history-list__item:nth-of-type(1) {
+
+.history-img {
   grid-row: 1/4;
 }
-.history-list__item:nth-of-type(2) {
+
+.history-logo {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -358,7 +389,8 @@ input[type=date]:valid::before {
   border: 1px solid #e1e1e1;
   padding: 107px 212px;
 }
-.history-list__item:nth-of-type(3) {
+
+.history-title {
   color: #333;
   font-size: 40px;
   font-weight: 900;
@@ -366,7 +398,8 @@ input[type=date]:valid::before {
   letter-spacing: -0.5px;
   padding-top: 80px;
 }
-.history-list__item:nth-of-type(4) {
+
+.history-content {
   color: #333;
   font-size: 24px;
   font-weight: 400;
@@ -387,13 +420,6 @@ input[type=date]:valid::before {
   padding: 4.2rem 2rem;
   white-space: nowrap;
 }
-.footer .icon-list {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: start;
-  gap: 1.2rem;
-}
 .footer__top {
   display: flex;
   flex-flow: column wrap;
@@ -405,7 +431,6 @@ input[type=date]:valid::before {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
-  gap: 0.4rem;
 }
 .footer-nav li {
   color: #777;
@@ -427,32 +452,6 @@ input[type=date]:valid::before {
   align-items: center;
   gap: 2rem;
 }
-.footer__bottom .company-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-}
-.footer__bottom .company-list li {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 0.4rem;
-  border: 0.1rem solid #f1f1f1;
-  padding: 1.4rem 3.7rem;
-}
-.footer__bottom .company-list li strong {
-  color: #333;
-  font-size: 1.4rem;
-  font-weight: 700;
-  line-height: 1.4rem;
-  letter-spacing: -0.05rem;
-}
-.footer__bottom .company-list li span {
-  color: #777;
-  line-height: 12px;
-  font-family: var(--eng);
-}
 .footer__copyright {
   color: #bebebe;
   font-size: 1.1rem;
@@ -464,9 +463,49 @@ input[type=date]:valid::before {
   font-size: 1.2rem;
   line-height: 1.2rem;
   content: "‧";
-  display: inline-block; /* inline-block으로 변경 */
+  display: inline-block;
   width: 0.3rem;
   font-family: var(--eng);
+}
+
+.company-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  border-top: 0.1rem solid #f1f1f1;
+  border-left: 0.1rem solid #f1f1f1;
+}
+.company-list li {
+  border-bottom: 0.1rem solid #f1f1f1;
+  border-right: 0.1rem solid #f1f1f1;
+}
+.company-list li strong {
+  color: #333;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.4rem;
+  letter-spacing: -0.05rem;
+}
+.company-list li span {
+  color: #777;
+  line-height: 12px;
+  font-family: var(--eng);
+}
+.company-list__link {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 1.4rem 3.7rem;
+}
+
+.icon-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: start;
+  gap: 1.2rem;
 }
 
 .list-type1 {
@@ -480,7 +519,7 @@ input[type=date]:valid::before {
 .list-type1__link {
   display: flex;
   flex-flow: column wrap;
-  padding: 30px 79px 30px 30px;
+  padding: 30px;
 }
 .list-type1__link strong {
   color: #000;
@@ -513,31 +552,32 @@ input[type=date]:valid::before {
   border-bottom: 1px solid #fac300;
   padding: 28px 0 28px 348px;
 }
-.list-type2 li {
+.list-type2__link {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-between;
   align-items: center;
   gap: 20px;
-  position: relative;
-}
-.list-type2 li a {
   color: #666;
   letter-spacing: -0.8px;
-  display: block;
 }
-.list-type2 li span {
+.list-type2__link::after {
   background: url(../images/ico_arrow_right.svg) no-repeat center;
-  display: block;
+  content: "";
+  display: inline-block;
   width: 24px;
   height: 24px;
-}
-.list-type2 li:nth-of-type(4) a {
-  color: #333;
-  text-decoration-line: underline;
 }
 
 .fw-700 {
   font-weight: 700;
+}
+
+.text-underline {
+  text-decoration-line: underline;
+}
+.text-underline::after {
+  display: none;
 }
 
 .list-heading3 {
@@ -555,15 +595,13 @@ input[type=date]:valid::before {
   gap: 24px;
   margin-top: 20px;
 }
-.list-type3 li {
-  border: 1px solid #fac300;
-}
 .list-type3__link {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  border: 1px solid #fac300;
   padding: 30px;
   white-space: nowrap;
 }
@@ -584,9 +622,12 @@ input[type=date]:valid::before {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   align-items: center;
+  border-top: 1px solid #94c0e9;
+  border-left: 1px solid #94c0e9;
 }
-.list-type5 li {
-  border: 1px solid #94c0e9;
+.list-type5__item {
+  border-bottom: 1px solid #94c0e9;
+  border-right: 1px solid #94c0e9;
 }
 .list-type5__btn {
   color: #94c0e9;
@@ -630,8 +671,9 @@ input[type=date]:valid::before {
   padding: 0 20px;
   white-space: nowrap;
 }
-.list-type6__btn span {
+.list-type6__btn::after {
   background: url(../images/ico_arrow_right_list5.svg) no-repeat center;
+  content: "";
   width: 8px;
   height: 13px;
 }
@@ -656,27 +698,35 @@ input[type=date]:valid::before {
 }
 .list-link__img.img1 {
   background: url(../images/img_list9_01.png) no-repeat left top;
+  background-size: cover;
 }
 .list-link__img.img2 {
   background: url(../images/img_list9_02.png) no-repeat left top;
+  background-size: cover;
 }
 .list-link__img.img3 {
   background: url(../images/img_list9_03.png) no-repeat left top;
+  background-size: cover;
 }
 .list-link__img.img4 {
   background: url(../images/img_list9_04.png) no-repeat left top;
+  background-size: cover;
 }
 .list-link__img.img5 {
   background: url(../images/img_list9_05.png) no-repeat left top;
+  background-size: cover;
 }
 .list-link__img.img6 {
   background: url(../images/img_list9_06.png) no-repeat left top;
+  background-size: cover;
 }
 .list-link__img.img7 {
   background: url(../images/img_list9_07.png) no-repeat left top;
+  background-size: cover;
 }
 .list-link__img.img8 {
   background: url(../images/img_list9_08.png) no-repeat left top;
+  background-size: cover;
 }
 .list-link__title {
   color: #333;
@@ -705,7 +755,6 @@ input[type=date]:valid::before {
 
 .a11y-hidden {
   overflow: hidden;
-  display: block;
   position: absolute;
   border: 0;
   width: 1px;
@@ -713,7 +762,7 @@ input[type=date]:valid::before {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-.new {
+.new-bedge {
   color: #fff;
   font-size: 12px;
   font-weight: 700;

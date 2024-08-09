@@ -1,26 +1,24 @@
 .history {
   padding: 20px;
 
-  &-list {
+  &-wrap {
     @include grid(grid, min-content 1fr, null, start, 0 120px);
-
-    &__item {
-      &:nth-of-type(1) {
-        grid-row: 1 / 4;
-      }
-      &:nth-of-type(2) {
-        @include flex(flex, row wrap, center, center, null);
-        @include border(1px, solid, #e1e1e1);
-        padding: 107px 212px;
-      }
-      &:nth-of-type(3) {
-        @include font(#333, 40px, 900, 1, -0.5px);
-        padding-top: 80px;
-      }
-      &:nth-of-type(4) {
-        @include font(#333, 24px, 400, null, null);
-        padding-top: 20px;
-      }
-    }
   }
+}
+.history-img {
+  grid-row: 1 / 4;
+}
+.history-logo {
+  @include flex(flex, row wrap, center, center, null);
+  @include border(1px, solid, #e1e1e1);
+  padding: 107px 212px;
+}
+.history-title {
+  @include font(#333, 40px, 900, 1, -0.5px);
+  padding-top: 80px;
+}
+
+.history-content {
+  @include font(#333, 24px, 400, null, null);
+  padding-top: 20px;
 }

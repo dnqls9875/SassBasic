@@ -45,6 +45,9 @@
     <!-- content2 -->
     <h2>Content2</h2>
     <table class="table-type2">
+      <caption class="a11y-hidden">
+        컨텐츠1
+      </caption>
       <colgroup>
         <col />
         <col style="width: 228px" />
@@ -53,7 +56,7 @@
       </colgroup>
       <thead>
         <tr>
-          <th>담당업무</th>
+          <th class="text-left">담당업무</th>
           <th>이름</th>
           <th>전화번호</th>
           <th>이메일</th>
@@ -61,67 +64,81 @@
       </thead>
       <tbody>
         <tr>
-          <td>행정업무총괄</td>
-          <td>이도섭</td>
-          <td>031-219-2316</td>
+          <td><span class="ct-type2--text text-left">행정업무총괄</span></td>
+          <td><span class="ct-type2--text">이도섭</span></td>
+          <td><span class="ct-type2--text">031-219-2316</span></td>
           <td>
-            <a href=""></a>
+            <a href="" aria-label="이메일" class="email-btn"></a>
           </td>
         </tr>
         <tr>
-          <td>교학행정전반</td>
-          <td>권혁인</td>
-          <td>031-219-2317</td>
+          <td><span class="ct-type2--text text-left">교학행정전반</span></td>
+          <td><span class="ct-type2--text">권혁인</span></td>
+          <td><span class="ct-type2--text">031-219-2317</span></td>
           <td>
-            <a href=""></a>
+            <a href="" aria-label="이메일" class="email-btn"></a>
           </td>
         </tr>
         <tr>
-          <td>입학, 홍보</td>
-          <td>여지영</td>
-          <td>031-219-2189</td>
+          <td><span class="ct-type2--text text-left">입학, 홍보</span></td>
+          <td><span class="ct-type2--text">여지영</span></td>
+          <td><span class="ct-type2--text">031-219-2189</span></td>
           <td>
-            <a href=""></a>
+            <a href="" aria-label="이메일" class="email-btn"></a>
           </td>
         </tr>
         <tr>
-          <td>온라인수업, 졸업, 종합시험, 계절학기, 학점인정</td>
-          <td>김승기</td>
-          <td>031-219-3307</td>
           <td>
-            <a href=""></a>
+            <span class="ct-type2--text text-left"
+              >온라인수업, 졸업, 종합시험, 계절학기, 학점인정</span
+            >
+          </td>
+          <td><span class="ct-type2--text">김승기</span></td>
+          <td><span class="ct-type2--text">031-219-3307</span></td>
+          <td>
+            <a href="" aria-label="이메일" class="email-btn"></a>
           </td>
         </tr>
         <tr>
-          <td>오프라인수업, 졸업, 논문, 등록, 장학</td>
-          <td>최규은</td>
-          <td>031-219-2320</td>
           <td>
-            <a href=""></a>
+            <span class="ct-type2--text text-left"
+              >오프라인수업, 졸업, 논문, 등록, 장학</span
+            >
+          </td>
+          <td><span class="ct-type2--text">최규은</span></td>
+          <td><span class="ct-type2--text">031-219-2320</span></td>
+          <td>
+            <a href="" aria-label="이메일" class="email-btn"></a>
           </td>
         </tr>
         <tr>
-          <td>워크숍, 국제경영현장연구, 원우회 관리, 학적(휴,복학)</td>
-          <td>함준희</td>
-          <td>031-219-2319</td>
           <td>
-            <a href=""></a>
+            <span class="ct-type2--text text-left"
+              >워크숍, 국제경영현장연구, 원우회 관리, 학적(휴,복학)</span
+            >
+          </td>
+          <td><span class="ct-type2--text">함준희</span></td>
+          <td><span class="ct-type2--text">031-219-2319</span></td>
+          <td>
+            <a href="" aria-label="이메일" class="email-btn"></a>
           </td>
         </tr>
         <tr>
-          <td>온라인 과목 운영</td>
-          <td>노희영</td>
-          <td>031-219-3673</td>
           <td>
-            <a href=""></a>
+            <span class="ct-type2--text text-left">온라인 과목 운영</span>
+          </td>
+          <td><span class="ct-type2--text">노희영</span></td>
+          <td><span class="ct-type2--text">031-219-3673</span></td>
+          <td>
+            <a href="" aria-label="이메일" class="email-btn"></a>
           </td>
         </tr>
         <tr>
-          <td>최고경영자과정</td>
-          <td>최유리</td>
-          <td>031-219-2318</td>
+          <td><span class="ct-type2--text text-left">최고경영자과정</span></td>
+          <td><span class="ct-type2--text">최유리</span></td>
+          <td><span class="ct-type2--text">031-219-2318</span></td>
           <td>
-            <a href=""></a>
+            <a href="" aria-label="이메일" class="email-btn"></a>
           </td>
         </tr>
       </tbody>
@@ -134,6 +151,9 @@
     <!-- content3 -->
     <h2>Content3</h2>
     <table class="table-type3">
+      <caption class="a11y-hidden">
+        컨텐츠3
+      </caption>
       <colgroup>
         <col style="width: 108px" />
         <col />
@@ -152,41 +172,74 @@
       </thead>
       <tbody>
         <tr>
-          <td>공지</td>
-          <td>[입학] 2023학년도 1학기 정시 서면면접 신청 및 대면면접 안내</td>
-          <td>입학</td>
-          <td>2022-10-27</td>
-          <td>248</td>
-        </tr>
-        <tr>
-          <td>1370</td>
-          <td>2022-2학기 온라인 과목의 기말고사 온라인 실시 안내</td>
-          <td>공통</td>
-          <td>2022-10-27</td>
-          <td>50</td>
-        </tr>
-        <tr>
-          <td>1368</td>
+          <td><span class="ct-type3--text">공지</span></td>
           <td>
-            12월 3일(토요일) 2023학년도 논술고사로 인한 오프라인 수업 대체 안내
+            <a href="" class="notice">
+              <span class="notice__text"
+                >[입학] 2023학년도 1학기 정시 서면면접 신청 및 대면면접
+                안내</span
+              ></a
+            >
           </td>
-          <td>공통</td>
-          <td>2022-10-27</td>
-          <td>804</td>
+          <td><span class="ct-type3--text">입학</span></td>
+          <td><span class="ct-type3--text">2022-10-27</span></td>
+          <td><span class="ct-type3--text">248</span></td>
         </tr>
         <tr>
-          <td>1367</td>
-          <td>아주대MBA 2022 성공수기 공모전 당선작 안내</td>
-          <td>공통</td>
-          <td>2022-10-27</td>
-          <td>108</td>
+          <td><span class="ct-type3--text">1370</span></td>
+          <td>
+            <a href="" class="notice">
+              <span class="notice__text"
+                >[입학] 2023학년도 1학기 정시 서면면접 신청 및 대면면접
+                안내</span
+              ></a
+            >
+          </td>
+          <td><span class="ct-type3--text">공통</span></td>
+          <td><span class="ct-type3--text">2022-10-27</span></td>
+          <td><span class="ct-type3--text">50</span></td>
         </tr>
         <tr>
-          <td>1366</td>
-          <td>한국코치협회에서 주관하는 자격인증 취득생명단</td>
-          <td>공통</td>
-          <td>2022-10-27</td>
-          <td>10</td>
+          <td><span class="ct-type3--text">1368</span></td>
+          <td>
+            <a href="" class="notice">
+              <span class="notice__text"
+                >[입학] 2023학년도 1학기 정시 서면면접 신청 및 대면면접
+                안내</span
+              ></a
+            >
+          </td>
+          <td><span class="ct-type3--text">공통</span></td>
+          <td><span class="ct-type3--text">2022-10-27</span></td>
+          <td><span class="ct-type3--text">804</span></td>
+        </tr>
+        <tr>
+          <td><span class="ct-type3--text">1367</span></td>
+          <td>
+            <a href="" class="notice">
+              <span class="notice__text"
+                >[입학] 2023학년도 1학기 정시 서면면접 신청 및 대면면접
+                안내</span
+              ></a
+            >
+          </td>
+          <td><span class="ct-type3--text">공통</span></td>
+          <td><span class="ct-type3--text">2022-10-27</span></td>
+          <td><span class="ct-type3--text">108</span></td>
+        </tr>
+        <tr>
+          <td><span class="ct-type3--text">1366</span></td>
+          <td>
+            <a href="" class="notice">
+              <span class="notice__text"
+                >[입학] 2023학년도 1학기 정시 서면면접 신청 및 대면면접
+                안내</span
+              ></a
+            >
+          </td>
+          <td><span class="ct-type3--text">공통</span></td>
+          <td><span class="ct-type3--text">2022-10-27</span></td>
+          <td><span class="ct-type3--text">10</span></td>
         </tr>
       </tbody>
     </table>
@@ -198,6 +251,9 @@
     <!-- content4 -->
     <h2>Content4</h2>
     <table class="table-type4">
+      <caption class="a11y-hidden">
+        컨텐츠4
+      </caption>
       <colgroup>
         <col />
         <col style="width: 200px" />
@@ -213,18 +269,42 @@
       <tbody>
         <tr>
           <td>
-            250,000원<br />
-            <span>성적표에 청강사항 기재를 요청한 원우</span><br />
-            <span>성적표에는 '(청강)과목명'이 기재되고 P, F로 평가됨</span>
+            <ul class="content-type4--list">
+              <li class="content-type4--list__item">
+                <p class="text-left">250,000원</p>
+              </li>
+              <li class="content-type4--list__item">
+                <p class="content-type4--list__text">
+                  성적표에 청강사항 기재를 요청한 원우
+                </p>
+              </li>
+              <li class="content-type4--list__item">
+                <p class="content-type4--list__text">
+                  성적표에는 '(청강)과목명'이 기재되고 P, F로 평가됨
+                </p>
+              </li>
+            </ul>
           </td>
           <td rowspan="2">100,000원</td>
           <td rowspan="2">500,000원</td>
         </tr>
         <tr>
           <td>
-            100,000원<br />
-            <span>성적표에 청강사항 기재를 요청하지 않은 원우</span><br />
-            <span>학생이 요청할 경우 원장 명의의 과목 이수증 발급</span>
+            <ul class="content-type4--list">
+              <li class="content-type4--list__item">
+                <p class="text-left">100,000원</p>
+              </li>
+              <li class="content-type4--list__item">
+                <p class="content-type4--list__text">
+                  성적표에 청강사항 기재를 요청하지 않은 원우
+                </p>
+              </li>
+              <li class="content-type4--list__item">
+                <p class="content-type4--list__text">
+                  학생이 요청할 경우 원장 명의의 과목 이수증 발급
+                </p>
+              </li>
+            </ul>
           </td>
         </tr>
       </tbody>
@@ -237,23 +317,24 @@
     <!-- content5 -->
     <h2>Content5</h2>
     <div class="content-type5">
-      <div class="heading-type5">
-        <h3>최고경영자과정 71기 모집 <span>(1년과정)</span></h3>
-        <p>Advanced Management Program</p>
+      <div class="text-wrap">
+        <h3 class="heading-title">
+          최고경영자과정 71기 모집
+          <span class="heading-subtext">(1년과정)</span>
+        </h3>
+        <p class="heading-text">Advanced Management Program</p>
       </div>
       <ul class="recruitment-list">
         <li>
-          <a href="" download="" class="recruitment-list__download"
-            >브로슈어 다운로드</a
-          >
+          <a href="" download="" class="recruitment-btn">브로슈어 다운로드</a>
         </li>
         <li>
-          <a href="" download="" class="recruitment-list__download"
+          <a href="" download="" class="recruitment-btn"
             >입학지원서 다운로드( word)</a
           >
         </li>
         <li>
-          <a href="" download="" class="recruitment-list__download"
+          <a href="" download="" class="recruitment-btn"
             >입학지원서 다운로드( hwp)</a
           >
         </li>
@@ -267,15 +348,15 @@
     <!-- content6 -->
     <h2>Content6</h2>
     <div class="history">
-      <ul class="history-list">
-        <li class="history-list__item">
-          <img src="./images/img_content6.png" alt="" />
-        </li>
-        <li class="history-list__item">
-          <img src="./images/img_logo.png" alt="" />
-        </li>
-        <li class="history-list__item">Rebehayan</li>
-        <li class="history-list__item">
+      <div class="history-wrap">
+        <div class="history-img">
+          <img src="./images/img_content6.png" alt="회사 전경" />
+        </div>
+        <div class="history-logo">
+          <img src="./images/img_logo.png" alt="회사 로고" />
+        </div>
+        <div class="history-title">Rebehayan</div>
+        <div class="history-content">
           Rebehayan, which started its business in Korea in 2012, provides<br />
           relevant camping equipment in all aspects. We believe our products<br />
           with the right function, design and price are only a means, and not
@@ -287,8 +368,8 @@
           We will continue to improve and develop relevant functions and<br />
           designs as our lifestyles change and become your partners, sharing<br />
           the surprises and deep emotions we felt outdoors.
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
     <br />
     <br />
@@ -314,43 +395,53 @@
             /></a>
           </li>
         </ul>
-        <nav>
-          <ul class="footer-nav">
-            <li><span>15654 충북 청원군 청주시 삼성대학교</span></li>
-            <li>
-              <span>사업자 등록번호</span>
-              <span class="--before"></span>
-              <span>1234-51-8484</span>
-            </li>
-          </ul>
-        </nav>
+        <ul class="footer-nav">
+          <li><span>15654 충북 청원군 청주시 삼성대학교</span></li>
+          <li>
+            <span>사업자 등록번호</span>
+            <span class="--before"></span>
+            <span>1234-51-8484</span>
+          </li>
+        </ul>
       </div>
       <div class="footer__bottom">
         <nav>
           <ul class="company-list">
             <li>
-              <strong>오프라인 수업</strong>
-              <span>021-249-2820</span>
+              <a href="" class="company-list__link">
+                <strong>오프라인 수업</strong>
+                <span>021-249-2820</span>
+              </a>
             </li>
             <li>
-              <strong>온라인 수업</strong>
-              <span>021-229-3207</span>
+              <a href="" class="company-list__link">
+                <strong>온라인 수업</strong>
+                <span>021-229-3207</span>
+              </a>
             </li>
             <li>
-              <strong>휴/복학</strong>
-              <span>021-229-2219</span>
+              <a href="" class="company-list__link">
+                <strong>휴/복학</strong>
+                <span>021-229-2219</span>
+              </a>
             </li>
             <li>
-              <strong>입학</strong>
-              <span>021-229-2229</span>
+              <a href="" class="company-list__link">
+                <strong>입학</strong>
+                <span>021-229-2229</span>
+              </a>
             </li>
             <li>
-              <strong>최고경영자</strong>
-              <span>021-229-2218</span>
+              <a href="" class="company-list__link">
+                <strong>최고경영자</strong>
+                <span>021-229-2218</span>
+              </a>
             </li>
             <li>
-              <strong>문의</strong>
-              <span>Q&A게시판</span>
+              <a href="" class="company-list__link">
+                <strong>문의</strong>
+                <span>Q&A게시판</span>
+              </a>
             </li>
           </ul>
         </nav>

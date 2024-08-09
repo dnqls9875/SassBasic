@@ -3,43 +3,27 @@
   @include border(1px, solid, #fac300, bottom);
   padding: 28px 0 28px 348px;
 
-  li {
-    @include flex(flex, row nowrap, null, center, 20px);
-    position: relative;
+  &__link {
+    @include flex(flex, row nowrap, space-between, center, 20px);
+    @include font(#666, null, null, null, -0.8px);
 
-    a {
-      @include font(#666, null, null, null, -0.8px);
-      display: block;
-    }
-    span {
+    &::after {
       @include background("ico_arrow_right.svg", center);
-      display: block;
+      content: "";
+      display: inline-block;
       width: 24px;
       height: 24px;
-    }
-    // &::after {
-    //   @include background("ico_arrow_right.svg", center);
-    //   content: "";
-    //   display: inline-block;
-    //   position: absolute;
-    //   top: 50%;
-    //   transform: translateY(-50%);
-    //   width: 24px;
-    //   height: 24px;
-    //   margin: 0 20px;
-    // }
-  }
-  // nth-of-type 사용한 이유는 다중 class가 길어져서
-  li {
-    &:nth-of-type(4) {
-      a {
-        color: #333;
-        text-decoration-line: underline;
-      }
     }
   }
 }
 
 .fw-700 {
   font-weight: 700;
+}
+
+.text-underline {
+  text-decoration-line: underline;
+  &::after {
+    display: none;
+  }
 }

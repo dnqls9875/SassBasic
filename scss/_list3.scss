@@ -5,12 +5,9 @@
   @include grid(grid, repeat(3, 1fr), null, center, 24px);
   margin-top: 20px;
 
-  li {
-    @include border(1px, solid, #fac300);
-  }
-
   &__link {
     @include flex(flex, column wrap, center, center, 10px);
+    @include border(1px, solid, #fac300);
     padding: 30px;
     white-space: nowrap;
     strong {

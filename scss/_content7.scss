@@ -8,17 +8,13 @@
   padding: rem(42) rem(20);
   white-space: nowrap;
 
-  .icon-list {
-    @include flex(flex, row nowrap, center, start, rem(12));
-  }
-
   // footer__top
   &__top {
     @include flex(flex, column wrap, center, center, rem(20));
   }
   // footer-nav
   &-nav {
-    @include grid(grid, 1fr, null, center, rem(4));
+    @include grid(grid, 1fr, null, center, null);
 
     li {
       @include font(#777, rem(14), null, rem(24), rem(-0.5));
@@ -31,23 +27,6 @@
   // footer__bottom
   &__bottom {
     @include flex(flex, column wrap, center, center, rem(20));
-    .company-list {
-      @include grid(grid, repeat(2, 1fr), null, center, null);
-
-      li {
-        @include flex(flex, column wrap, center, center, rem(4));
-        @include border(rem(1), solid, #f1f1f1);
-        padding: rem(14) rem(37);
-
-        strong {
-          @include font(#333, rem(14), 700, rem(14), rem(-0.5));
-        }
-        span {
-          @include font(#777, null, null, 12px, null);
-          font-family: var(--eng);
-        }
-      }
-    }
   }
   &__copyright {
     @include font(#bebebe, rem(11), null, rem(12), null);
@@ -58,9 +37,36 @@
     &::before {
       @include font(#777, rem(12), null, rem(12), null);
       content: "‧";
-      display: inline-block; /* inline-block으로 변경 */
+      display: inline-block;
       width: rem(3);
       font-family: var(--eng);
     }
   }
+}
+
+.company-list {
+  @include grid(grid, repeat(2, 1fr), null, center, null);
+  @include border(rem(1), solid, #f1f1f1, top);
+  @include border(rem(1), solid, #f1f1f1, left);
+
+  li {
+    @include border(rem(1), solid, #f1f1f1, bottom);
+    @include border(rem(1), solid, #f1f1f1, right);
+
+    strong {
+      @include font(#333, rem(14), 700, rem(14), rem(-0.5));
+    }
+    span {
+      @include font(#777, null, null, 12px, null);
+      font-family: var(--eng);
+    }
+  }
+  &__link {
+    @include flex(flex, column wrap, center, center, rem(4));
+    padding: rem(14) rem(37);
+  }
+}
+
+.icon-list {
+  @include flex(flex, row nowrap, center, start, rem(12));
 }

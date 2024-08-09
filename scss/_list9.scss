@@ -16,6 +16,7 @@
     @for $i from 1 through 8w {
       &.img#{$i} {
         @include background("img_list9_0#{$i}.png", left top);
+        background-size: cover;
       }
     }
   }
@@ -41,16 +42,10 @@
 }
 
 .a11y-hidden {
-  overflow: hidden;
-  display: block;
-  position: absolute;
-  border: 0;
-  width: 1px;
-  height: 1px;
-  clip: rect(1px, 1px, 1px, 1px);
+  @include a11y-hidden();
 }
 
-.new {
+.new-bedge {
   @include font(#fff, 12px, 700, 28px, null);
   display: block;
   position: absolute;

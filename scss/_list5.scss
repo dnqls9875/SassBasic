@@ -1,8 +1,11 @@
 .list-type5 {
   @include grid(grid, repeat(5, 1fr), null, center, null);
+  @include border(1px, solid, #94c0e9, top);
+  @include border(1px, solid, #94c0e9, left);
 
-  li {
-    @include border(1px, solid, #94c0e9);
+  &__item {
+    @include border(1px, solid, #94c0e9, bottom);
+    @include border(1px, solid, #94c0e9, right);
   }
 
   &__btn {

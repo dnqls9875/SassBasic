@@ -7,34 +7,29 @@
   flex-direction: column;
   gap: 24px;
   padding: 60px;
+}
 
-  .heading-type5 {
-    h3 {
-      @include font(#333, 48px, 700, 64px, -1px);
-    }
-    span {
-      @include font(null, null, 300, null, null);
-    }
-  }
-  p {
-    @include font(#333, 36px, 300, 48px, null);
-    font-family: var(--eng);
-  }
+.heading-title {
+  @include font(#333, 48px, 700, 64px, -1px);
+}
+.heading-subtext {
+  font-weight: 300;
+}
+.heading-text {
+  @include font(#333, 36px, 300, 48px, null);
+  font-family: var(--eng);
+}
 
-  .recruitment-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    width: 679px;
+.recruitment-list {
+  @include grid(grid, repeat(3, min-content), null, center, 12px);
+}
 
-    &__download {
-      @include font(#94c0e9, null, 700, 1, -1px);
-      @include border(1px, solid, #94c0e9);
-      display: block;
-      padding: 16px 32px;
-      border-radius: 50px;
-      text-align: center;
-      white-space: nowrap;
-    }
-  }
+.recruitment-btn {
+  @include font(#94c0e9, null, 700, 1, -1px);
+  @include border(1px, solid, #94c0e9);
+  display: block;
+  padding: 16px 32px;
+  border-radius: 50px;
+  text-align: center;
+  white-space: nowrap;
 }

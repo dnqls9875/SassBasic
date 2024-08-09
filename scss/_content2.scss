@@ -1,33 +1,29 @@
 .table-type2 {
-  tr {
-    td {
-      &:first-child {
-        text-align: left;
-      }
-    }
-  }
   th {
     @include font(#333, null, 700, 24px, null);
     @include border(2px, solid, #005bac, top);
     @include border(1px, solid, #005bac, bottom);
     padding: 24px 16px;
-
-    &:first-child {
-      text-align: left;
-    }
   }
   td {
-    @include font(#777, null, null, 24px, null);
     @include border(1px, solid, #e1e1e1, bottom);
     padding: 24px 20px;
     text-align: center;
-
-    a {
-      @include background("ico_mail2.svg", center);
-      display: block;
-      width: 24px;
-      height: 24px;
-      margin: 0 auto;
-    }
   }
+}
+
+.email-btn {
+  @include background("ico_mail2.svg", center);
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.ct-type2--text {
+  @include font(#777, null, null, 24px, null);
+  display: block;
 }
