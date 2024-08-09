@@ -5,7 +5,7 @@
     // 육안상으로 확인 할 수 있게한 style
     border: 1px solid #000;
   }
-  &__link {
+  a {
     @include flex(flex, column wrap, null, null, null);
     padding: 30px;
 
@@ -18,12 +18,12 @@
       white-space: nowrap;
     }
   }
+}
 
-  &__btn {
-    @include background("ico_btn_plus.svg", left);
-    display: block;
-    width: 36px;
-    height: 36px;
-    margin-top: 20px;
-  }
+.btn-plus {
+  @include background("ico_btn_plus.svg", left);
+  display: block;
+  width: 36px;
+  height: 36px;
+  margin-top: 20px;
 }

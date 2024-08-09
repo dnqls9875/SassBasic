@@ -9,7 +9,7 @@
     background: #fff;
   }
 
-  &__btn {
+  a {
     @include flex(flex, row nowrap, space-between, center, null);
     @include font(#333, 14px, 700, 20px, -0.5px);
     width: auto;

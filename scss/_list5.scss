@@ -3,12 +3,12 @@
   @include border(1px, solid, #94c0e9, top);
   @include border(1px, solid, #94c0e9, left);
 
-  &__item {
+  li {
     @include border(1px, solid, #94c0e9, bottom);
     @include border(1px, solid, #94c0e9, right);
   }
 
-  &__btn {
+  a {
     @include font(#94c0e9, 14px, 700, 20px, -0.5px);
     display: block;
     padding: 22px 24px;

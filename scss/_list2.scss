@@ -3,7 +3,7 @@
   @include border(1px, solid, #fac300, bottom);
   padding: 28px 0 28px 348px;
 
-  &__link {
+  a {
     @include flex(flex, row nowrap, space-between, center, 20px);
     @include font(#666, null, null, null, -0.8px);
 
@@ -21,7 +21,7 @@
   font-weight: 700;
 }
 
-.text-underline {
+--.underline {
   text-decoration-line: underline;
   &::after {
     display: none;

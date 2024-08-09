@@ -516,19 +516,19 @@ input[type=date]:valid::before {
 .list-type1 li {
   border: 1px solid #000;
 }
-.list-type1__link {
+.list-type1 a {
   display: flex;
   flex-flow: column wrap;
   padding: 30px;
 }
-.list-type1__link strong {
+.list-type1 a strong {
   color: #000;
   font-size: 20px;
   font-weight: 700;
   line-height: 1;
   letter-spacing: -1px;
 }
-.list-type1__link span {
+.list-type1 a span {
   color: #999;
   font-size: 14px;
   font-weight: 500;
@@ -536,7 +536,8 @@ input[type=date]:valid::before {
   margin-top: 16px;
   white-space: nowrap;
 }
-.list-type1__btn {
+
+.btn-plus {
   background: url(../images/ico_btn_plus.svg) no-repeat left;
   display: block;
   width: 36px;
@@ -552,7 +553,7 @@ input[type=date]:valid::before {
   border-bottom: 1px solid #fac300;
   padding: 28px 0 28px 348px;
 }
-.list-type2__link {
+.list-type2 a {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -561,7 +562,7 @@ input[type=date]:valid::before {
   color: #666;
   letter-spacing: -0.8px;
 }
-.list-type2__link::after {
+.list-type2 a::after {
   background: url(../images/ico_arrow_right.svg) no-repeat center;
   content: "";
   display: inline-block;
@@ -573,10 +574,10 @@ input[type=date]:valid::before {
   font-weight: 700;
 }
 
-.text-underline {
+--.underline {
   text-decoration-line: underline;
 }
-.text-underline::after {
+--.underline::after {
   display: none;
 }
 
@@ -595,7 +596,7 @@ input[type=date]:valid::before {
   gap: 24px;
   margin-top: 20px;
 }
-.list-type3__link {
+.list-type3 a {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -605,14 +606,14 @@ input[type=date]:valid::before {
   padding: 30px;
   white-space: nowrap;
 }
-.list-type3__link strong {
+.list-type3 a strong {
   color: #fac300;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: -0.9px;
   text-align: center;
 }
-.list-type3__link span {
+.list-type3 a span {
   color: #666;
   line-height: 1.8;
   letter-spacing: -0.8px;
@@ -625,11 +626,11 @@ input[type=date]:valid::before {
   border-top: 1px solid #94c0e9;
   border-left: 1px solid #94c0e9;
 }
-.list-type5__item {
+.list-type5 li {
   border-bottom: 1px solid #94c0e9;
   border-right: 1px solid #94c0e9;
 }
-.list-type5__btn {
+.list-type5 a {
   color: #94c0e9;
   font-size: 14px;
   font-weight: 700;
@@ -656,7 +657,7 @@ input[type=date]:valid::before {
   border: 1px solid #bdbdbd;
   background: #fff;
 }
-.list-type6__btn {
+.list-type6 a {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -671,7 +672,7 @@ input[type=date]:valid::before {
   padding: 0 20px;
   white-space: nowrap;
 }
-.list-type6__btn::after {
+.list-type6 a::after {
   background: url(../images/ico_arrow_right_list5.svg) no-repeat center;
   content: "";
   width: 8px;
