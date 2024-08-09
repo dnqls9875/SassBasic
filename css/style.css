@@ -574,10 +574,10 @@ input[type=date]:valid::before {
   font-weight: 700;
 }
 
---.underline {
+.--underline {
   text-decoration-line: underline;
 }
---.underline::after {
+.--underline::after {
   display: none;
 }
 
